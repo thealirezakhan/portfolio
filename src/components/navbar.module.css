@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+
+.navbar {
+  width: 100%;
+  background-color: #011627;;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid rgb(77, 77, 77);
+  font-family: "Fira Code",sans-serif;
+  position: fixed;
+  color: #607B96;
+  font-size: 18px;
+  z-index: 999;
+}
+
+.navbar a{
+  color: #607B96;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+
+.menu{
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
+}
+.menu ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 35px;
+  padding: 0px 5px ;
+  margin-bottom: 0;
+  
+}
+
+.menu li{
+  cursor: pointer;
+  margin: auto 0;
+}
+.menubtn {
+  font-size: 18px;
+  
+}
+.navbar .logo{
+  width: max-content;
+  padding-right: 10vw;
+  padding-left: 5rem;
+}
+.navbar .logo,
+.navbar li{
+  margin: auto 0;
+  list-style: none;
+}
+
+.box {
+  justify-content: center;
+  margin: 0 auto;
+  
+}
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6
+{
+  width: 1px;
+  height: 60px;
+  background-color: rgb(77, 77, 77);
+}
+.con{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+.hamburger {
+  display: none;
+  width: 35px;
+  cursor: pointer;
+  margin: auto 0;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 9999;
+
+}
+ .hamburger::before, .hamburger::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #607B96;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+.hamburger .bar{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #607B96;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+.isactive {
+  display: none;
+}
+
+.navpanel {
+  bottom: 100%;
+  position: fixed;
+  background-color: #011627;
+  width: 100vw;
+  height: max-content;
+  z-index: 99;
+  transition: 0.5s ease;
+  border-bottom: 1px solid rgb(77, 77, 77);
+}
+
+.navpanel ul{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.navpanel ul li a {
+  color: #607B96;
+  
+  list-style: square;
+}
+
+
+
+@media screen and (max-width: 918px){
+    .menubtn {
+      display: none;
+    }
+    .line2, .line3, .line4{
+      display: none;
+    }
+    .hamburger{
+      display: block;
+    }
+    .navbar .logo{
+      width: max-content;
+      padding-right: 10vw;
+      padding-left: 30px;
+    }
+}
+

@@ -1,0 +1,29 @@
+.is-active {
+  transform: translateY(100%);
+}
+
+
+.active {
+  padding-bottom: 12px;
+  border-bottom: 6px solid #e69335;
+}
+
+.isactive::before {
+  display: block;
+  transform: rotate(-45deg) translate(-2.0px, 6px);
+}
+.isactive::after {
+  transform: rotate(45deg) translate(-2.0px, -6.5px);
+}
+.isactive .navbar_bar__0W4zx{
+  display: none;
+}
+
+
+@media screen and (max-width: 918px){
+  .active {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #e69335;
+  }
+}
+

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+.hero {
+  font-family: "Fira Code", sans-serif;
+  background: url(/public/porfolio-home-desktop.png) no-repeat center;
+  background-size: cover;
+  height: calc(100vh);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.text1 {
+  color: white;
+  font-size:16px;
+  margin-bottom: -10px;
+}
+.text2 {
+  color: white;
+  font-size: 64px;
+  margin-bottom: -10px;
+}
+.text3 {
+  color: #4d5bce;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.text4,
+.text5 {
+  color: #607b96;
+  font-size: 16px;
+}
+
+.hright img {
+  max-width: 40vw;
+}
+
+
+@media screen and (max-width: 768px){
+    .hero {
+        flex-direction: column;
+      }
+      .text1 {
+        color: white;
+        font-size: 16px;
+        margin-bottom: -10px;
+      }
+      .text2 {
+        color: white;
+        font-size: 46px;
+        margin-bottom: -10px;
+      }
+      .text3 {
+        color: #4d5bce;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }  
+      .hero img{
+        display: none;
+      }
+}

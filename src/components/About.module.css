@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+*::selection{
+    color: #c7b61b;
+}
+.about {
+    font-family: "Fira Code",sans-serif;
+    background-color: #011627;
+    height: 100vh;
+    display: flex;
+    color: #607B96;
+    
+}
+.div1{
+    background-color: transparent;
+    border-right: 1px solid rgb(77, 77, 77);
+    height: calc(100vh - 60px - 60px);
+    width: 70px;
+    transform: translateY(60px);
+    display: flex;
+    flex-direction: column;
+   
+}
+.div1{
+    font-size: 28px;
+}
+.topicon{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 35px;
+}
+.bottomicon{
+    position: absolute;
+    width: 100%;
+    gap: 30px;
+    bottom: 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* div2==================================================================================== */
+
+
+.div2{
+    background-color: transparent;
+    border-right: 1px solid rgb(77, 77, 77);
+    height: calc(100vh - 60px - 60px);
+    width: 250px;
+    transform: translateY(60px);
+}
+.div {
+    color: #c7b61b;
+}
+.folder {
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  .files {
+    padding-left: 20px;
+  }
+  .files2 {
+    padding-left: 15px;
+  }
+  .file9,
+  .file10, 
+  .file11, 
+  .file12,
+  .file13,
+  .file14{
+    margin-left: -12px;
+  }
+
+  .file2{
+    background-color: #1e2d3d;;
+  }
+
+
+.div3{
+    position: absolute;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    height: 40px;
+    width: calc(100% - 70px);
+    transform: translateY(60px);
+    right: 0;
+}
+
+
+/* div4============================================================================= */
+.div4{
+    transform: translateY(70px);
+    height: calc(100vh - 120px);
+}
+.div4 ul{
+    background-color: transparent;
+}
+.div4 ul li{
+    list-style: none;
+    display: flex;
+    align-items: self-start;
+    font-size: 16px;
+}
+
+
+.div4 li h6{
+    padding-bottom: 30px;
+    display: flex;
+    font-size: 16px;
+    color: #607B96;
+}
+.div4 ul li:focus{
+   background-color: #03101bd0;
+}
+.div4 .line{
+    width: 1px;
+    background-color: rgb(77, 77, 77);
+    height: 40px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+.div4 pre{
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px){
+    .div1,.div2{
+        display: none;
+    }
+    .div3{
+        width: 100%;
+    }
+    .div4 ul li{
+        list-style: none;
+        display: flex;
+        align-items: self-start;
+        font-size: 18px;
+    }
+    .div4 pre{
+        font-size: 10px;
+    }
+}

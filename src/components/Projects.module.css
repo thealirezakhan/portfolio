@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+html{
+    background-color: #011627;;
+}
+.projects {
+  font-family: "Fira Code", sans-serif;
+  background-color: #011627;
+  height: calc(100vh);
+  margin: 0 auto;
+  display: flex;
+  color: #607b96;
+  overflow: hidden;
+}
+
+.div1 {
+  background-color: transparent;
+  border-right: 1px solid rgb(77, 77, 77);
+  height: calc(100vh - 60px - 60px);
+  width: 70px;
+  transform: translateY(60px);
+  display: flex;
+  flex-direction: column;
+}
+.div1 {
+  font-size: 28px;
+}
+.topicon {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 35px;
+}
+.bottomicon {
+  position: absolute;
+  width: 100%;
+  gap: 30px;
+  bottom: 0;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* div2==================================================================================== */
+
+.div2 {
+  background-color: transparent;
+  border-right: 1px solid rgb(77, 77, 77);
+  height: 100vh;
+  width: 305px;
+  transform: translateY(60px);
+}
+.div {
+  color: #c7b61b;
+}
+.folder {
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.files {
+  padding-left: 20px;
+}
+.files2 {
+  padding-left: 15px;
+}
+.file9,
+.file10, 
+.file11, 
+.file12,
+.file13,
+.file14{
+  margin-left: -12px;
+}
+
+.file15{
+  background-color: #1e2d3d;
+}
+
+.div3 {
+  position: absolute;
+  border-bottom: 1px solid rgb(77, 77, 77);
+  height: 40px;
+  width: calc(100% - 4%);
+  transform: translateY(60px);
+  right: 0;
+}
+
+
+.filename h6{
+  position: absolute;
+  display: flex;
+  transform: translateY(70px);
+  font-size: 16px;
+  margin-left: 30px;
+  z-index: 10;
+}
+.filename .line{
+  width: 1px;
+    background-color: rgb(77, 77, 77);
+    height: 40px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+/* cards============================================================ */
+
+.container {
+  height: calc(100vh - 100px - 60px);
+  width: calc(100vh - 70px -250px);
+  transform: translateY(100px);
+  display: block;
+  overflow: scroll;
+}
+.container::-webkit-scrollbar{
+  width: 0px;
+}
+.title{
+  color: #5565E8;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+.title span {
+  color: #e29014;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+.cont{
+  background-color: #011221;
+  width: min-content;
+  border-radius: 20px;
+  border: 1px solid rgb(77, 77, 77);
+  height: min-content;
+  margin: 0 auto;
+}
+
+.cards .image img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  min-width: 18vw;
+  height: 145px;
+  object-fit: cover;
+  padding: 0;
+}
+.details {
+  padding: 20px 20px;
+}
+.cards h1 {
+  font-size: 20px;
+}
+.green {
+  color: greenyellow;
+}
+.pink {
+  color: rgb(255, 156, 255);
+  padding-left: 0px;
+}
+.purple {
+  color: #915eff;
+  padding-left: 10px;
+}
+
+.cont button{
+  width: 90%;
+  border: 1px rgb(77, 77, 77) solid;
+  background-color: transparent;
+  color: white;
+  padding: 10px ;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1180px){
+  .container {
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 768px) {
+  .div1,
+  .div2 {
+    display: none;
+  }
+  .div3 {
+    background-color: #011627;
+    width: 100%;
+    z-index: 9;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    
+  }
+  .projects{
+    overflow: auto;
+  }
+  .container{
+    height: fit-content;
+    width: 100vw;
+    transform: translateY(60px);
+    padding-bottom: 60px;
+    
+    
+  }
+  .cont{
+  background-color: #011221;
+  width: min-content;
+  border-radius: 9px;
+}
+.title{
+  padding-top: 20px;
+}
+
+.cards .image img {
+  width: 100%;
+  min-width: 300px;
+  min-height: 100px;
+  object-fit: cover;
+  
+}
+.details {
+  padding: 10px 10px;
+}
+.cards h1 {
+  font-size: 20px;
+}
+}
